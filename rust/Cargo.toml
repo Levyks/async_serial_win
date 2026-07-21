@@ -1,0 +1,33 @@
+[package]
+name = "async_serial_win"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "async_serial_win"
+# rlib is needed so `cargo test`'s integration tests (tests/) can link
+# against the crate as a normal Rust library, in addition to the cdylib
+# shipped for the Dart FFI boundary.
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+windows-sys = { version = "0.59", features = [
+  "Win32_Foundation",
+  "Win32_Security",
+  "Win32_System_IO",
+  "Win32_System_Threading",
+  "Win32_Devices_Communication",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Registry",
+] }
+
+[dev-dependencies]
+serde_json = "1"

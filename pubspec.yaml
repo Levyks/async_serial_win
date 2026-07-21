@@ -2,10 +2,13 @@ name: async_serial_win
 description: >
   Truly non-blocking, async Windows serial port I/O for Dart — backed by a
   Rust native library using overlapped Win32 I/O (no polling, no busy-wait).
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/Levyks/async_serial_win
 repository: https://github.com/Levyks/async_serial_win
 issue_tracker: https://github.com/Levyks/async_serial_win/issues
+
+platforms:
+  windows:
 
 environment:
   sdk: ^3.9.0

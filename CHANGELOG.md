@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Explicitly declare `platforms: windows` in `pubspec.yaml` so pub.dev shows this as a Windows-only package instead of inferring support for Android/iOS/Linux/macOS from static analysis.
+
 ## 0.1.1
 
 - Add MIT license.

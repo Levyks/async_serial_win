@@ -1,3 +1,9 @@
+## 0.1.1
+
+- Add MIT license.
+- Add more examples (basic usage, concurrent read/write, error handling).
+- Add pub.dev and GitHub badges to the README.
+
 ## 0.1.0
 
 - Initial release: `list`, `open`, `read` (with timeout), `write`, `drain`, `configure`, `close`.

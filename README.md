@@ -1,5 +1,8 @@
 # async_serial_win
 
+[![pub package](https://img.shields.io/pub/v/async_serial_win.svg)](https://pub.dev/packages/async_serial_win)
+[![GitHub](https://img.shields.io/badge/GitHub-Levyks%2Fasync__serial__win-181717?logo=github)](https://github.com/Levyks/async_serial_win)
+
 Truly non-blocking, async serial port I/O for Dart and Flutter on Windows — backed by a small Rust native library that uses real overlapped Win32 I/O. No polling, no busy-wait loops, no blocking the isolate.
 
 ## Why this exists

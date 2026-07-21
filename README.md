@@ -127,7 +127,17 @@ class WindowsSerialPort {
 }
 ```
 
-See `example/loopback_test.dart` for a runnable end-to-end demo, and `test/` for the full test suite (which doubles as detailed usage reference for every operation's semantics).
+## Examples
+
+See `example/`:
+
+- [`async_serial_win_example.dart`](example/async_serial_win_example.dart) — the minimal list/open/write/read/close flow.
+- [`concurrent_read_write.dart`](example/concurrent_read_write.dart) — a pending `read()` and an in-flight `write()` on the same port at once.
+- [`error_handling.dart`](example/error_handling.dart) — `SerialException`, the read-timeout-returns-empty contract, and using a port after `close()`.
+- [`list_ports.dart`](example/list_ports.dart) — just enumerating available ports.
+- [`loopback_test.dart`](example/loopback_test.dart) — a fuller end-to-end demo against an auto-discovered loopback pair.
+
+`test/` doubles as detailed usage reference too, since it exercises every operation's documented semantics.
 
 ## Status
 
